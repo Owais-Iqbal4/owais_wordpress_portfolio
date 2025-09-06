@@ -2,12 +2,17 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+import thefutureperfect from "../../Assets/Projects/thefutureperfect.png"
+import xenali from "../../Assets/Projects/xenali.png"
+import ownaword from "../../Assets/Projects/ownaword.png"
+import maison from "../../Assets/Projects/maison.png"
+import badminton from "../../Assets/Projects/badminton.png"
+import prettyneat from "../../Assets/Projects/prettyneat.png"
+import soyoung from "../../Assets/Projects/soyoung.png"
+import tinyhands from "../../Assets/Projects/tinyhands.png"
+import vibesandvapours from "../../Assets/Projects/vibesandvapours.png"
+
 
 function Projects() {
   return (
@@ -23,68 +28,93 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={thefutureperfect}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="The Future Perfect"
+              description="Made By is a collection of works exclusive to The Future Perfect, spanning a wide selection of American and international designers and manufacturers. Made By carries pieces from over 100 artists and studios, representing brands with unique, made-to-order, limited-edition works of art, furniture, textiles, lighting, and objects."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://www.thefutureperfect.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={xenali}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Xenali"
+              description="Since our inception to this Industry in 2003, we have dedicated ourselves to finding the best products and creating the best solutions, all at the best price. This is due solely to our International Partners whose work ethic, and dedication to their craft meet our meticulous standards. This means we maintain a large volume of inventory. When you require a unique solution, our International Design Teams will develop the custom solutions that will elevate your Project to the next level."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://www.xenali.com/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={ownaword}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Ownaword"
+              description="We believe that words are more than just symbols — they carry memories, milestones, and emotions. At Own A Word™, we help you make a word yours, forever. And that’s why we made it easy for anyone to claim a word they’ll never forget."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://ownaword.com/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={maison}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Maison Numen"
+              description="beautiful object dazzles us. A flawless technique moves us. An honest story brings us closer to mankind. A Maison Numen object is the perfect mix of beauty, technique and tradition."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://maisonnumen.com/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={badminton}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="Badminton"
+              description="Das Badminton-Center Mörsenbroich in Düsseldorf verfügt über 18 Badmintonfelder mit Gelenk-schonendem Schwingboden, perfekter Sicht und Beleuchtung. Auf unserer Webseite erfahren Sie mehr über das größte Badminton-Fachgeschäft in Düsseldorf."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://www.badminton-center.com/"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={prettyneat}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Pretty neat shop"
+              description="Das Badminton-Center Mörsenbroich in Düsseldorf verfügt über 18 Badmintonfelder mit Gelenk-schonendem Schwingboden, perfekter Sicht und Beleuchtung. Auf unserer Webseite erfahren Sie mehr über das größte Badminton-Fachgeschäft in Düsseldorf."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://prettyneatshop.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={soyoung}
+              isBlog={false}
+              title="Soyoung"
+              description="Our bags made for packing lunch and your daily necessities infuse your day with timeless beauty, thoughtful functionality, and lasting durability."
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://soyoung.ca/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={tinyhands}
+              isBlog={false}
+              title="Tiny Hands"
+              description="The perfect gifts for kids and grown-ups who love food, candy and miniature things 💖"
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://tinyhandsonline.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={vibesandvapours}
+              isBlog={false}
+              title="Vibes And vapours"
+              description="Be the first to hear about our latest launches, exclusive offers and limited-edition collaborations"
+              // ghLink="https://github.com/soumyajit4419/Chatify"
+              demoLink="https://vibesandvapours.com/"
             />
           </Col>
         </Row>
