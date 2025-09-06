@@ -8,9 +8,7 @@ import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser,
 } from "react-icons/ai";
-
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
